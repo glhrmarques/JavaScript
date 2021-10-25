@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Studying JS</title>
+
+    </head>
+    <body>
+        <h1>Practicing</h1>
+        <input type='number' name='velocidade' id='velocidade'>
+        <input type='button' value='verificar' onClick=validar()>
+        <div id='resposta'></div>
+
+        <script>
+
+            function validar() {
+                var velocidadeAtual = document.getElementById('velocidade')
+                var vel = Number(velocidadeAtual.value) 
+                var resposta = document.getElementById('resposta')
+                
+                if (vel > 50) {
+                    resposta.innerHTML += '<p>Você foi multado</p>'
+                } else {
+                    resposta.innerHTML += '<p>Dirija com cuidado</p>'
+                }
+            }
+
+        </script>
+    </body>
+</html>
