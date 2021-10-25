@@ -1,0 +1,36 @@
+<!-- Practicing Coditions with Text input  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Studying JS</title>
+
+    </head>
+    <body>
+        <h1>Nacionality</h1>
+        <input type='text' name='country' id='country'>
+        <input type='button' value='submit' onClick=verify()>
+        <div id='answer'></div>
+
+
+        <script>
+            function verify() {
+                var country = document.getElementById('country')
+                var nacionality = (country.value)
+                var render = document.getElementById('answer')
+
+                if (nacionality == 'Brazil') {
+                    render.innerHTML = '<p>you are a brazilian</p>'
+                } else {
+                    render.innerHTML = '<p>you from a different</p>'
+
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
