@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Studying JS</title>
+        <style>
+            .btn {
+                background-color: #3d3d3d;
+                padding: 16px;
+                border-radius: 30px;
+                color: #fafafa;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="text">Practicing</h1>
+        <button class="btn" onclick="changeColor()">Change Color</button>
+
+        <script>
+            const changeColor = () => {
+                var textColor = document.querySelector('.text')
+                textColor.style.color = 'red'
+                textColor.innerHTML = 'New Text'
+
+            }
+        </script>
+    </body>
+</html>
